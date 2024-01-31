@@ -9,21 +9,50 @@
 </head>
 <body>
     <div class="formContainer">
-
+        <form>
+            <div class="titleForm">
+                <label for="titleForm">Title: </label><br><br>
+                <input type="text" id="titleForm" name="title">
+            </div>
+            <div class="authorForm">
+                <label for="authorForm">Author: </label><br><br>
+                <input type="text" id="authorForm" name="author">
+            </div>
+            <div class="pagesForm">
+                <label for="pagesForm">Pages: </label><br><br>
+                <input type="number" id="pagesForm" name="pages">
+            </div>
+            <div class="readForm">Read: <br><br>
+                <label for="yes">Yes</label>
+                <input type="radio"  id="yes" name="yesOrNo" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="yesOrNo" value="no">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <div class="displayContainer">
-            <div class="title">
+            <div class="topRow">
                 <h1>Title</h1>
-                <div class="topLine"></div>
+                <h1>Author</h1>
+                <h1>Pages</h1>
+                <h1>Read</h1>
+                <h1>Del</h1>
+            </div>
+            <div class="title">
+                
             </div>
             <div class="author">
-                <h1>Author</h1>
+
             </div>
             <div class="pages">
-                <h1>Pages</h1>
+                
             </div>
             <div class="readYN">
-                <h1>Read</h1>
+                
+            </div>
+            <div class="delete"> 
+
             </div>
     </div>
 </body>

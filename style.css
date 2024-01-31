@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.formContainer {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #a1a1aa;
+}
+
+.displayContainer {
+    background-color: #64748b;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 85%;
+}
+.displayContainer h1 {
+    text-align: center;
+    padding-top: 10%;
+}
+.topLine {
+    
+}
+

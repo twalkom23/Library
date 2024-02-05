@@ -8,8 +8,10 @@
     <title>Library</title>
 </head>
 <body>
+    
     <div class="formContainer">
-        <form>
+        <h1 class="libHeader">Library</h1>
+        <form id="libForm">
             <div class="titleForm">
                 <label for="titleForm">Title: </label><br><br>
                 <input type="text" id="titleForm" name="title">
@@ -24,11 +26,11 @@
             </div>
             <div class="readForm">Read: <br><br>
                 <label for="yes">Yes</label>
-                <input type="radio"  id="yes" name="yesOrNo" value="yes">
+                <input type="radio"  id="yes" name="yesOrNo" value="Yes">
                 <label for="no">No</label>
-                <input type="radio" id="no" name="yesOrNo" value="no">
+                <input type="radio" id="no" name="yesOrNo" value="No">
             </div>
-            <button type="submit">Submit</button>
+            <button class="submit" type="submit" >Submit</button>
         </form>
     </div>
     <div class="displayContainer">

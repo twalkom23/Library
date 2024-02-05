@@ -14,6 +14,10 @@ body {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
 }
+.libHeader {
+    
+    grid-column: 2 / 3;
+}
 form {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -31,6 +35,9 @@ form .authorForm {
 }
 form .pagesForm {
     grid-row: 3 / 4;
+}
+.submit {
+    width: 65%;
 }
 
 

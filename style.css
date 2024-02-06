@@ -84,7 +84,24 @@ form .pagesForm {
 .displayContainer .delete {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
-   
+}
+.title div {
+    margin-bottom: 5%;
+}
+.author div { 
+    margin-bottom: 5%;
+} 
+.pages div {
+    margin-bottom: 5%;
+}
+.readYN div {
+    margin-bottom: 5%;
+}
+.delete button {
+    margin-bottom: 5%;
+    border-radius: 20px;
+    border: none;
+    
 }
 
 

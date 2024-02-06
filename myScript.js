@@ -7,6 +7,7 @@ const titleLog = document.querySelector('.title');
 const authorLog = document.querySelector('.author');
 const pagesLog = document.querySelector('.pages');
 const readLog = document.querySelector('.readYN');
+const delLog = document.querySelector('.delete');
 
 const myLibrary = [];
 //new book constructor to be used later
@@ -39,6 +40,8 @@ function libraryDisplay(array) {
     authorLog.innerHTML = '';
     pagesLog.innerHTML = '';
     readLog.innerHTML = '';
+    delLog.innerHTML = '';
+
     for (let i = 0; i < array.length; i++){
         //adding title to DOM
         const contentTitle = document.createElement('div');
@@ -63,6 +66,11 @@ function libraryDisplay(array) {
         contentRead.classList.add('contentRead');
         contentRead.textContent = myLibrary[i].haveRead;
         readLog.appendChild(contentRead);
+
+        //adding the delete option
+        const delBTN = document.createElement('button');
+        delBTN.innerHTML = 'DEL';
+        delLog.appendChild(delBTN);
     }
 }
 

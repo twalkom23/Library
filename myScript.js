@@ -10,6 +10,7 @@ const readLog = document.querySelector('.readYN');
 const delLog = document.querySelector('.delete');
 
 const myLibrary = [];
+let delArray = [];
 //new book constructor to be used later
 function bookObject(title, author, pages, haveRead) {
     this.title = title;
@@ -33,6 +34,10 @@ function readOrNot() {
         }
         return ' ';
 }
+//Function will delete a row when the delete button is clicked.
+function deleteRow() {
+
+}
 
 //This function will go through the array and display the books on the page
 function libraryDisplay(array) {
@@ -43,6 +48,7 @@ function libraryDisplay(array) {
     delLog.innerHTML = '';
 
     for (let i = 0; i < array.length; i++){
+        
         //adding title to DOM
         const contentTitle = document.createElement('div');
         contentTitle.classList.add('contentTitle');
@@ -71,7 +77,14 @@ function libraryDisplay(array) {
         const delBTN = document.createElement('button');
         delBTN.innerHTML = 'DEL';
         delLog.appendChild(delBTN);
+        //Putting the delete button in to an array
+        while (delArray.length < array.length) {
+            delArray.push(delBTN);
+        }
+        
+        
     }
+    
 }
 
 

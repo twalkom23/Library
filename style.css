@@ -109,9 +109,16 @@ form .pagesForm {
 .delete button {
     border-radius: 20px;
     border: none;
-   
-    
 }
+.contentRead {
+    background-color: #64748b;
+    border: none;
+    width: 100%;
+}
+.contentRead.clicked {
+    background-color:#a1a1aa;
+}
+
 
 
 

@@ -14,21 +14,21 @@
         <form id="libForm">
             <div class="titleForm">
                 <label for="titleForm">Title: </label><br><br>
-                <input type="text" id="titleForm" name="title">
+                <input type="text" id="titleForm" name="title" required placeholder="title">
             </div>
             <div class="authorForm">
                 <label for="authorForm">Author: </label><br><br>
-                <input type="text" id="authorForm" name="author">
+                <input type="text" id="authorForm" name="author" required placeholder="author">
             </div>
             <div class="pagesForm">
                 <label for="pagesForm">Pages: </label><br><br>
-                <input type="number" id="pagesForm" name="pages">
+                <input type="number" id="pagesForm" name="pages" required placeholder="pages">
             </div>
             <div class="readForm">Read: <br><br>
                 <label for="yes">Yes</label>
-                <input type="radio"  id="yes" name="yesOrNo" value="Yes">
+                <input type="radio"  id="yes" name="yesOrNo" value="Yes" required>
                 <label for="no">No</label>
-                <input type="radio" id="no" name="yesOrNo" value="No">
+                <input type="radio" id="no" name="yesOrNo" value="No" required>
             </div>
             <button class="submit" type="submit" >Submit</button>
         </form>
